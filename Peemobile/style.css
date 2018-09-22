@@ -18,8 +18,8 @@ body{
     position: absolute;
     filter: blur(5px);
     -webkit-filter: blur(5px);
-    margin-left: 4.5em;
-    margin-right: 4.5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 .first-part{
     position: relative;
@@ -106,6 +106,10 @@ h1{
     width: 14em;
     padding: 1em;
 }
+.buttonG2:hover{
+    background-color:transparent;
+    color: black;
+}
 .buttonG3{
     background-color: blueviolet;
     color: white;
@@ -114,6 +118,9 @@ h1{
     padding: 1em;
     margin-right: 23em;
     margin-bottom: 8em;
+}
+.buttonG3:hover{
+    background-color: transparent;
 }
 
 h3{
@@ -155,7 +162,8 @@ h3 span{
 
 .galery-container{
     margin-top: 60px;
-    max-width: 1200px;
+    max-width: 100%;
+    min-width: 720px;   
     width: 100%;
     margin: 0;
     background-color: #ffffff;
@@ -176,6 +184,7 @@ figure{
 figure img{
     width: 100%;
     border-radius: 7px;
+    min-width: 600px;
 }
 
 .form-part{
@@ -236,8 +245,8 @@ figure img{
     z-index: -1;
     position: absolute;
     opacity: 0.5;
-    margin-left: 4.5em;
-    margin-right: 4.5em;   
+    margin-left: 5em;
+    margin-right: 5em;   
 }
 .buttonG4{
     margin-top: 1.5em;
@@ -262,20 +271,6 @@ figure img{
     align-items: center;
     flex-wrap: wrap;
 }
-/*
-#search{
-    margin-top: 25px;
-    border-radius: 30px;
-    width: 55%;
-    height: 50px;
-    border: none;
-    padding: 0 25px;
-    font-family: inherit;
-    background-color: transparent;
-    border: 2px solid black;
-    float: left;
-}
-*/
 .we-wont{
     margin-top: 3rem;
 }
@@ -337,7 +332,11 @@ figure img{
      margin: 30px 0;
 }
 
-
+@media only screen and (max-width: 1200px){
+    .first-part{
+        width: 80%;
+    }
+}
 
 
 
